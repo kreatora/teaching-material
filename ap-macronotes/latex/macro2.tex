@@ -1,0 +1,268 @@
+\documentclass[aspectratio=169, 10pt]{beamer}
+
+% --- Theme Setup ---
+\usetheme{Madrid}
+\usecolortheme{beaver} % A red theme (often distinctive for Econ)
+\setbeamertemplate{navigation symbols}{} 
+
+% --- Packages ---
+\usepackage{booktabs} 
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+
+% --- Metadata ---
+\title{Unit 2: Economic Indicators \& The Business Cycle}
+\subtitle{Measurement of Economic Performance}
+\author{Doğukan Günkördü}
+\date{\today}
+
+\begin{document}
+
+% --- Title ---
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Unit Roadmap}
+    \tableofcontents
+\end{frame}
+
+% =========================================================
+% SECTION 1: GDP
+% =========================================================
+\section{Gross Domestic Product (GDP)}
+
+\begin{frame}{1.1 The Circular Flow Matrix}
+    The economy consists of two key actors and two key markets:
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{itemize}
+            \item \textbf{Households:} Supply resources (labor) and demand goods.
+            \item \textbf{Firms:} Demand resources and supply goods.
+            \item \textbf{Product Market:} Where goods/services are sold.
+            \item \textbf{Resource (Factor) Market:} Where land, labor, and capital are sold.
+        \end{itemize}
+        
+        \column{0.5\textwidth}
+        \begin{alertblock}{Key Insight}
+        One person's spending is another person's income.
+        \end{alertblock}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{1.2 Gross Domestic Product (GDP)}
+    \textbf{Definition:} The dollar value of all \underline{final} goods and services produced within a country's borders in one year.
+    
+    \vspace{0.5cm}
+    \textbf{The Three Rules of GDP:}
+    \begin{enumerate}
+        \item \textbf{Excludes Financial Transactions:} Stocks, bonds, and Real Estate transfers are NOT production.
+        \item \textbf{Excludes Transfer Payments:} Welfare, Social Security, Stimulus checks (no production occurred).
+        \item \textbf{Excludes Second-Hand Sales:} Used cars, thrift store clothes (counted when they were new).
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{1.3 Components of GDP (Expenditures Approach)}
+    $$ \text{GDP} = C + I + G + X_n $$
+    
+    \begin{description}
+        \item[Consumption (C):] Spending by households. (Durable vs Non-durable goods). \textit{~70\% of US GDP.}
+        \item[Investment (I):] Spending by businesses on capital (machines), new construction (houses), and \textbf{changes in inventory}.
+        \item[Government (G):] Goods and services (schools, tanks). \textbf{NOT} transfer payments.
+        \item[Net Exports ($X_n$):] Exports ($X$) - Imports ($M$).
+    \end{description}
+\end{frame}
+
+\begin{frame}{Check for Understanding: GDP}
+    \begin{exampleblock}{Question}
+    Which of the following is included in US GDP?
+    \end{exampleblock}
+    
+    \begin{enumerate}[A]
+        \item A monthly Social Security check received by a retiree.
+        \item The purchase of a used Toyota on Craigslist.
+        \item The purchase of 100 shares of Google stock.
+        \item A haircut bought at a local salon.
+        \item Tires bought by Ford to put on a new truck.
+    \end{enumerate}
+    \pause
+    \textbf{Answer:} D (Service). \textit{A, C are transfers/financial. B is used. E is an intermediate good.}
+\end{frame}
+
+% =========================================================
+% SECTION 2: INFLATION
+% =========================================================
+\section{Inflation and Price Indices}
+
+\begin{frame}{2.1 Nominal vs. Real GDP}
+    \begin{itemize}
+        \item \textbf{Nominal GDP:} GDP measured in current prices. It does not account for inflation.
+        \item \textbf{Real GDP:} GDP expressed in constant, or unchanging, dollars. Adjusted for inflation.
+    \end{itemize}
+    
+    \begin{block}{The GDP Deflator}
+    A measure of the price level calculated as the ratio of nominal GDP to real GDP.
+    $$ \text{GDP Deflator} = \frac{\text{Nominal GDP}}{\text{Real GDP}} \times 100 $$
+    \end{block}
+\end{frame}
+
+\begin{frame}{2.2 Measuring Inflation: The CPI}
+    \textbf{Consumer Price Index (CPI):} Measures the price of a standard "market basket" of goods purchased by a typical urban consumer.
+    
+    $$ \text{CPI} = \frac{\text{Price of Market Basket in Current Year}}{\text{Price of Market Basket in Base Year}} \times 100 $$
+    
+    \vspace{0.3cm}
+    \textbf{The Inflation Rate Formula:}
+    $$ \text{\% Change} = \frac{\text{Year}_2 - \text{Year}_1}{\text{Year}_1} \times 100 $$
+\end{frame}
+
+\begin{frame}{2.3 Winners and Losers of Inflation}
+    \textbf{Unexpected} inflation redistributes wealth.
+    
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{tcolorbox}[colback=green!10, title=Who is HELPED?]
+        \begin{itemize}
+            \item \textbf{Borrowers:} They repay loans with dollars that have lower purchasing power.
+            \item A business where the price of the product increases faster than the price of resources.
+        \end{itemize}
+        \end{tcolorbox}
+        
+        \column{0.5\textwidth}
+        \begin{tcolorbox}[colback=red!10, title=Who is HURT?]
+        \begin{itemize}
+            \item \textbf{Lenders:} They are paid back with less valuable dollars.
+            \item \textbf{Savers:} Money in the bank loses real value.
+            \item People on \textbf{Fixed Incomes}.
+        \end{itemize}
+        \end{tcolorbox}
+    \end{columns}
+\end{frame}
+
+% =========================================================
+% SECTION 3: UNEMPLOYMENT
+% =========================================================
+\section{Unemployment}
+
+\begin{frame}{3.1 Defining the Labor Force}
+    \textbf{Population Division:}
+    \begin{enumerate}
+        \item Under 16 or Institutionalized (Prison/Military).
+        \item \textbf{Not in Labor Force:} Retirees, full-time students, stay-at-home parents, \textbf{discouraged workers}.
+        \item \textbf{Labor Force:} 16+, willing/able to work.
+    \end{enumerate}
+    
+    \vspace{0.5cm}
+    $$ \text{Unemployment Rate} = \frac{\text{\# Unemployed}}{\text{\# in Labor Force}} \times 100 $$
+\end{frame}
+
+\begin{frame}{3.2 Three Types of Unemployment}
+    \begin{block}{1. Frictional (Good/Normal)}
+    "Between jobs", voluntary, qualified workers with transferable skills. E.g., College grad looking for first job.
+    \end{block}
+    
+    \begin{block}{2. Structural (Creative Destruction)}
+    Changes in the labor force make some skills obsolete. The jobs will not come back. E.g., VCR repairman replaced by streaming.
+    \end{block}
+    
+    \begin{block}{3. Cyclical (Bad)}
+    Caused by a recession. Demand for goods falls $\rightarrow$ demand for labor falls.
+    \end{block}
+\end{frame}
+
+\begin{frame}{3.3 The Natural Rate of Unemployment (NRU)}
+    \begin{itemize}
+        \item The economy is at \textbf{Full Employment} when there is \textbf{no Cyclical Unemployment}.
+        \item Full employment does NOT mean 0\% unemployment.
+    \end{itemize}
+    
+    $$ \text{NRU} = \text{Frictional} + \text{Structural} $$
+    
+    \vspace{0.5cm}
+    \textit{In the US, the NRU is typically around 4-6\%.}
+\end{frame}
+
+\begin{frame}{3.4 Criticisms of the Unemployment Rate}
+    The official rate (U3) can be misleading because of:
+    
+    \begin{itemize}
+        \item \textbf{Discouraged Workers:} People who have given up looking for a job. They are no longer in the labor force, so the unemployment rate \textit{drops} even though the situation is worse.
+        \item \textbf{Underemployed Workers:} Part-time workers who want full-time work are counted as "employed."
+    \end{itemize}
+\end{frame}
+
+% =========================================================
+% SECTION 4: THE BUSINESS CYCLE
+% =========================================================
+\section{The Business Cycle}
+
+\begin{frame}{4.1 Phases of the Business Cycle}
+    The US economy grows over time, but it is not linear.
+    
+    \begin{itemize}
+        \item \textbf{Peak:} Temporary maximum. Low unemployment, high inflation.
+        \item \textbf{Recession (Contraction):} Decline in real GDP for 2 consecutive quarters (6 months). Unemployment rises.
+        \item \textbf{Trough:} The bottom. High unemployment.
+        \item \textbf{Expansion (Recovery):} Real GDP rises. Inflation rises.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{4.2 Output Gaps}
+    \begin{itemize}
+        \item \textbf{Potential Output ($Y_P$):} The level of Real GDP produced when the economy is at the Natural Rate of Unemployment (Full Employment).
+        \item \textbf{Actual Output ($Y$):} What we are actually producing.
+    \end{itemize}
+    
+    \vspace{0.5cm}
+    \begin{alertblock}{The Gaps}
+    If $Y < Y_P$: \textbf{Recessionary Gap} (High Unemployment).\\
+    If $Y > Y_P$: \textbf{Inflationary Gap} (High Inflation, Overheating).
+    \end{alertblock}
+\end{frame}
+
+% =========================================================
+% PRACTICE SECTION
+% =========================================================
+\section{Practice \& Application}
+
+\begin{frame}{Practice Calculation: CPI}
+    \textbf{Basket:} 10 Gallons of Milk + 5 Loaves of Bread.
+    \begin{itemize}
+        \item \textbf{Year 1 (Base):} Milk \$2, Bread \$1.
+        \item \textbf{Year 2:} Milk \$2.50, Bread \$2.
+    \end{itemize}
+    
+    \vspace{0.2cm}
+    \textbf{Calculate Cost of Basket:}
+    \begin{itemize}
+        \item Year 1: $(10 \times 2) + (5 \times 1) = \$25$
+        \item Year 2: $(10 \times 2.5) + (5 \times 2) = \$35$
+    \end{itemize}
+    
+    \vspace{0.2cm}
+    \textbf{Calculate CPI for Year 2:}
+    $$ \frac{35}{25} \times 100 = 140 $$
+    \textit{Inflation is 40\% from the base year.}
+\end{frame}
+
+\begin{frame}{Summary: The Big 3 Indicators}
+    \begin{table}[]
+    \centering
+    \begin{tabular}{|l|l|l|}
+    \hline
+    \textbf{Indicator} & \textbf{What it measures} & \textbf{Goal} \\ \hline
+    \textbf{Real GDP} & Economic Growth & $\approx 2-3\%$ growth \\ \hline
+    \textbf{Unemployment} & Labor utilization & $\approx 4-6\%$ (NRU) \\ \hline
+    \textbf{Inflation} & Change in price level & $\approx 2\%$ \\ \hline
+    \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}
+    \centering
+    \Huge \textbf{Questions?}
+\end{frame}
+
+\end{document}

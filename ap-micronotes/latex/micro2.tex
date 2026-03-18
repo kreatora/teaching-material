@@ -1,0 +1,325 @@
+\documentclass[aspectratio=169]{beamer}
+
+% Theme Settings
+\usetheme{Madrid}
+\usecolortheme{beaver} % Red/Gray theme matches typical Econ styling
+\setbeamertemplate{navigation symbols}{}
+
+% Packages
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+% Title Information
+\title{Unit 2: Supply and Demand}
+\subtitle{Elasticity, Taxation, and Consumer Choice}
+\author{Doğukan Günkördü}
+\date{}
+
+\begin{document}
+
+%---------------------------------------------------------
+% Title Slide
+%---------------------------------------------------------
+\begin{frame}
+    \titlepage
+\end{frame}
+
+%---------------------------------------------------------
+% Table of Contents
+%---------------------------------------------------------
+\begin{frame}{Learning Objectives}
+    In this chapter, we will cover:
+    \begin{itemize}
+        \item Price elasticity of demand and supply
+        \item Cross-price and Income elasticity
+        \item Consumer and Producer Surplus
+        \item Impact of Taxes (Deadweight Loss & Incidence)
+        \item Price Ceilings and Floors
+        \item Trade, Tariffs, and Quotas
+        \item Consumer Choice Theory (Utility Maximization)
+    \end{itemize}
+\end{frame}
+
+%---------------------------------------------------------
+% SECTION 1: ELASTICITY OF DEMAND
+%---------------------------------------------------------
+\section{Elasticity of Demand}
+
+\begin{frame}{Introduction to Elasticity}
+    \textbf{The Law of Demand} states that consumers buy more when prices fall. 
+    \vspace{0.5cm}
+    
+    However, \textbf{Elasticity} measures \textit{how much} more or less they buy.
+    \begin{itemize}
+        \item It measures \textbf{responsiveness}.
+        \item \textbf{Inelastic:} Consumers are insensitive to price changes (quantity changes a little).
+        \item \textbf{Elastic:} Consumers are sensitive to price changes (quantity changes a lot).
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Calculating Price Elasticity of Demand ($E_d$)}
+    \begin{block}{The Formula}
+    \[ E_d = \left| \frac{\% \Delta \text{ Quantity Demanded}}{\% \Delta \text{ Price}} \right| \]
+    \end{block}
+    
+    \textbf{Note:}
+    \begin{itemize}
+        \item Use absolute values (drop the negative sign).
+        \item \textbf{Calculating \% Change:} 
+        \[ \frac{\text{New} - \text{Old}}{\text{Old}} \]
+        \textit{Mnemonic: "N - OOO" (New minus Old Over Old)}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Elasticity Coefficient Values}
+    \begin{table}[]
+    \centering
+    \begin{tabular}{|l|c|l|}
+    \hline
+    \textbf{Type} & \textbf{Value} & \textbf{Description} \\ \hline
+    Perfectly Inelastic & $= 0$ & "Mr. Stick" (Vertical Line) \\ \hline
+    Relatively Inelastic & $< 1$ & Insensitive to price \\ \hline
+    Unit Elastic & $= 1$ & \% $\Delta Q = \% \Delta P$ \\ \hline
+    Relatively Elastic & $> 1$ & Sensitive to price \\ \hline
+    Perfectly Elastic & $\infty$ & "Mr. Flat" (Horizontal Line) \\ \hline
+    \end{tabular}
+    \end{table}
+    \vspace{0.2cm}
+    \footnotesize{\textbf{Tip:} "Inelastic" starts with "I" (Vertical). "Elastic" has horizontal dashes like "E".}
+\end{frame}
+
+\begin{frame}{The Total Revenue Test}
+    Total Revenue ($TR$) = Price $\times$ Quantity.
+    
+    \begin{itemize}
+        \item \textbf{Elastic Demand ($E_d > 1$):} $P$ and $TR$ move in \textbf{opposite} directions.
+        \begin{itemize}
+            \item Price $\uparrow$ $\rightarrow$ $TR \downarrow$
+        \end{itemize}
+        \item \textbf{Inelastic Demand ($E_d < 1$):} $P$ and $TR$ move in the \textbf{same} direction.
+        \begin{itemize}
+            \item Price $\uparrow$ $\rightarrow$ $TR \uparrow$
+        \end{itemize}
+        \item \textbf{Unit Elastic ($E_d = 1$):} $TR$ remains unchanged when Price changes.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Elasticity Along a Linear Demand Curve}
+    Elasticity varies along a downward-sloping linear demand curve.
+    \vspace{0.5cm}
+    \begin{itemize}
+        \item \textbf{Top Left:} Elastic Range ($E_d > 1$)
+        \item \textbf{Middle:} Unit Elastic ($E_d = 1$) — Total Revenue is maximized here.
+        \item \textbf{Bottom Right:} Inelastic Range ($E_d < 1$)
+    \end{itemize}
+    \vspace{0.5cm}
+    \textbf{Mnemonic:} \textit{EUI} (Elastic, Unit, Inelastic) $\rightarrow$ "Eat Up Idiots"
+\end{frame}
+
+\begin{frame}{Determinants of Elasticity}
+    Three questions to determine if a good is Elastic or Inelastic:
+    \begin{enumerate}
+        \item \textbf{Are there adequate substitutes?}
+        \begin{itemize}
+            \item Yes $\rightarrow$ Elastic (e.g., Toyota cars).
+            \item No $\rightarrow$ Inelastic (e.g., Insulin).
+        \end{itemize}
+        \item \textbf{Can the purchase be delayed?}
+        \begin{itemize}
+            \item Long time horizon $\rightarrow$ Elastic.
+            \item Urgent/Emergency $\rightarrow$ Inelastic.
+        \end{itemize}
+        \item \textbf{Does it require a large \% of income?}
+        \begin{itemize}
+            \item Large \% (e.g., Boat) $\rightarrow$ Elastic.
+            \item Small \% (e.g., Salt) $\rightarrow$ Inelastic.
+        \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+%---------------------------------------------------------
+% SECTION 2: OTHER ELASTICITIES
+%---------------------------------------------------------
+\section{Other Elasticities}
+
+\begin{frame}{Cross-Price Elasticity of Demand (CPED)}
+    Measures how a price change in Product Y affects Quantity of Product X.
+    
+    \[ CPED = \frac{\% \Delta \text{ Qty of Product X}}{\% \Delta \text{ Price of Product Y}} \]
+    
+    \begin{itemize}
+        \item \textbf{Positive (+):} Substitute Goods (e.g., Price of Hot Dogs $\uparrow$, Demand for Burgers $\uparrow$).
+        \item \textbf{Negative (-):} Complementary Goods (e.g., Price of Hot Dogs $\uparrow$, Demand for Buns $\downarrow$).
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Income Elasticity of Demand}
+    Measures how responsiveness of demand is to a change in income.
+    
+    \[ E_i = \frac{\% \Delta \text{ Quantity Demanded}}{\% \Delta \text{ Income}} \]
+    
+    \begin{itemize}
+        \item \textbf{Positive (+):} Normal Good (Income $\uparrow$, Demand $\uparrow$).
+        \item \textbf{Negative (-):} Inferior Good (Income $\uparrow$, Demand $\downarrow$).
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Price Elasticity of Supply}
+    Measures how sensitive producers are to changes in price.
+    \[ E_s = \frac{\% \Delta \text{ Quantity Supplied}}{\% \Delta \text{ Price}} \]
+    
+    \textbf{Time is the key determinant:}
+    \begin{itemize}
+        \item \textbf{Short Run:} Supply is more inelastic (hard to build new factories quickly).
+        \item \textbf{Long Run:} Supply is more elastic (firms can adjust production capacity).
+    \end{itemize}
+\end{frame}
+
+%---------------------------------------------------------
+% SECTION 3: SURPLUS AND PRICE CONTROLS
+%---------------------------------------------------------
+\section{Surplus \& Price Controls}
+
+\begin{frame}{Consumer and Producer Surplus}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \textbf{Consumer Surplus (CS):}
+        \begin{itemize}
+            \item Difference between max price a consumer is willing to pay and actual price.
+            \item Area \textit{below} Demand and \textit{above} Price.
+        \end{itemize}
+        
+        \column{0.5\textwidth}
+        \textbf{Producer Surplus (PS):}
+        \begin{itemize}
+            \item Difference between actual price and lowest price a seller is willing to accept.
+            \item Area \textit{above} Supply and \textit{below} Price.
+        \end{itemize}
+    \end{columns}
+    \vspace{0.5cm}
+    \centering
+    \textbf{Total Surplus = CS + PS} (Maximized at Equilibrium)
+\end{frame}
+
+\begin{frame}{Price Ceilings}
+    \textbf{Price Ceiling:} Maximum legal price (e.g., Rent Control).
+    \begin{itemize}
+        \item Must be set \textbf{BELOW} equilibrium to be binding (effective).
+        \item \textbf{Result:} Quantity Demanded > Quantity Supplied.
+        \item Creates a \textbf{Shortage}.
+        \item Creates \textbf{Deadweight Loss (DWL)}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Price Floors}
+    \textbf{Price Floor:} Minimum legal price (e.g., Minimum Wage, Ag. Supports).
+    \begin{itemize}
+        \item Must be set \textbf{ABOVE} equilibrium to be binding (effective).
+        \item \textbf{Result:} Quantity Supplied > Quantity Demanded.
+        \item Creates a \textbf{Surplus}.
+        \item Creates \textbf{Deadweight Loss (DWL)}.
+    \end{itemize}
+\end{frame}
+
+%---------------------------------------------------------
+% SECTION 4: TAXATION
+%---------------------------------------------------------
+\section{Taxation}
+
+\begin{frame}{Excise Taxes}
+    An \textbf{Excise Tax} is a per-unit tax on production.
+    \begin{itemize}
+        \item Shifts the Supply curve vertically upward by the amount of the tax.
+        \item Creates a "wedge" between the price consumers pay ($P_c$) and price producers receive ($P_s$).
+        \item \textbf{Tax Revenue} = Tax Amount $\times$ Quantity Sold.
+        \item \textbf{Deadweight Loss} = Loss of total surplus due to reduced quantity.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Tax Incidence (Who pays?)}
+    The burden of the tax falls on the side of the market that is \textbf{more inelastic} (less responsive).
+    
+    \begin{table}[]
+    \centering
+    \begin{tabular}{|l|l|}
+    \hline
+    \textbf{Elasticity Comparison} & \textbf{Incidence} \\ \hline
+    Demand is Inelastic & Consumers pay more \\ \hline
+    Supply is Inelastic & Producers pay more \\ \hline
+    Perfectly Inelastic Demand & Consumers pay \textbf{all} \\ \hline
+    Perfectly Elastic Demand & Producers pay \textbf{all} \\ \hline
+    \end{tabular}
+    \end{table}
+    \footnotesize{Mnemonic: If you can't leave the market (inelastic), you pay the tax.}
+\end{frame}
+
+%---------------------------------------------------------
+% SECTION 5: TRADE
+%---------------------------------------------------------
+\section{Trade & Tariffs}
+
+\begin{frame}{International Trade & Tariffs}
+    \textbf{World Price ($P_w$):}
+    \begin{itemize}
+        \item If $P_w < P_{\text{Domestic}}$: Country imports the good. Consumer surplus increases; Producer surplus decreases.
+    \end{itemize}
+
+    \textbf{Tariffs (Tax on Imports):}
+    \begin{itemize}
+        \item Increases price above World Price (but usually below domestic autarky price).
+        \item Reduces imports.
+        \item Generates Tariff Revenue for government.
+        \item Creates Deadweight Loss.
+    \end{itemize}
+\end{frame}
+
+%---------------------------------------------------------
+% SECTION 6: CONSUMER CHOICE
+%---------------------------------------------------------
+\section{Consumer Choice}
+
+\begin{frame}{Utility Theory}
+    \begin{itemize}
+        \item \textbf{Total Utility (TU):} Total satisfaction from consuming a good.
+        \item \textbf{Marginal Utility (MU):} Extra satisfaction from consuming \textbf{one more} unit.
+    \end{itemize}
+    
+    \textbf{Diminishing Marginal Utility:}
+    As you consume more of a good, the additional utility from each new unit decreases.
+    \begin{center}
+        \textit{"The first scoop of ice cream is great; the sixth scoop makes you sick."}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Utility Maximization Rule}
+    Consumers have limited budgets. To maximize total utility, they should spend their budget such that:
+    
+    \[ \frac{MU_x}{P_x} = \frac{MU_y}{P_y} \]
+    
+    \textbf{The Logic:}
+    \begin{itemize}
+        \item If $\frac{MU_x}{P_x} > \frac{MU_y}{P_y}$, you get more "bang for your buck" with Good X. Buy more X, less Y.
+        \item As you buy more X, $MU_x$ falls (diminishing returns) until the ratio equalizes.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Sample Utility Problem}
+    \textbf{Goal:} Spend \$52. Souvenirs (\$8), Games (\$4).
+    
+    \begin{itemize}
+        \item Step 1: Calculate $MU$ per dollar ($\frac{MU}{P}$) for every item.
+        \item Step 2: Buy the item with the highest $\frac{MU}{P}$.
+        \item Step 3: Repeat until budget is exhausted.
+    \end{itemize}
+    \vspace{0.5cm}
+    \textit{This method ensures you are always getting the maximum utility for every dollar spent.}
+\end{frame}
+
+\begin{frame}{End of Unit 2 Review}
+    \centering
+    \Large \textbf{Questions?}
+\end{frame}
+
+\end{document}

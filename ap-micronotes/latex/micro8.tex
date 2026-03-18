@@ -1,0 +1,287 @@
+\documentclass{beamer}
+
+% Theme Selection
+\usetheme{Madrid}
+\usecolortheme{beaver} % Red/Gray theme, professional for AP Econ
+
+% Packages
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{booktabs}
+
+% Title Information
+\title{Unit 8: Market Failure and the Role of Government}
+\subtitle{Externalities, Public Goods, and Income Distribution}
+\author{Doğukan Günkördü}
+\date{}
+
+\begin{document}
+
+%---------------------------------------------------------
+\begin{frame}
+    \titlepage
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{Unit Overview}
+    \tableofcontents
+\end{frame}
+
+%---------------------------------------------------------
+\section{Social Efficiency and Externalities}
+
+\begin{frame}{Marginal Social Benefit vs. Marginal Social Cost}
+    \begin{block}{Optimal Amount of Production}
+        Social efficiency is achieved when all costs and benefits are taken into consideration.
+        \[ \text{MSB} = \text{MSC} \]
+    \end{block}
+
+    \begin{itemize}
+        \item \textbf{Example (Recycling):} Most people recycle because the marginal social benefit (MSB) outweighs the marginal social cost (MSC).
+        \item \textbf{Example (Water Conservation):} Fewer people are willing to forgo a shower 3 times a week. At that point, the personal sacrifice (social cost) outweighs the benefit.
+    \end{itemize}
+    
+    \vspace{0.5cm}
+    \textbf{The Sweet Spot:}
+    Society wants to produce where MSB = MSC. 
+    \begin{itemize}
+        \item If $MSB > MSC$: Society wants \textbf{more} built (Underproduction).
+        \item If $MSC > MSB$: Society wants \textbf{fewer} built (Overproduction).
+    \end{itemize}
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{Defining Externalities}
+    Externalities arise when producer or consumer actions result in spillover costs or benefits to \textbf{third parties}.
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \textbf{Consumption Externalities}
+            \begin{itemize}
+                \item Arise from consumer activity.
+                \item \textbf{Negative:} Cigarette smoke (secondhand smoke).
+                \item \textbf{Positive:} Vaccines (herd immunity).
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{Production Externalities}
+            \begin{itemize}
+                \item Arise from producer activity.
+                \item \textbf{Negative:} A firm dumping chemicals in a river.
+                \item \textbf{Positive:} Research \& Development or subsidizing education.
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{Positive Externalities}
+    \begin{alertblock}{The Problem}
+        The market fails to realize all benefits for society.
+        \[ \text{MSB} > \text{MSC} \text{ at the market quantity.} \]
+    \end{alertblock}
+
+    \begin{itemize}
+        \item \textbf{Example:} Higher education.
+        \item \textbf{Spillover Benefits:} Lower crime rates, more productive economy, increased tax revenues.
+        \item \textbf{Market Failure:} The market \textbf{underproduces} the good ($Q_{mkt} < Q_{social}$).
+        \item \textbf{Deadweight Loss:} Exists at the market quantity because socially desirable trades are not happening.
+    \end{itemize}
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{Visualizing Positive Externalities}
+    \textit{(Refer to Figure 11.2 and 11.3 in textbook)}
+
+    \begin{itemize}
+        \item \textbf{Production:} Two supply curves. MSC is below MPC (or MSB is higher than MPB).
+        \item \textbf{Deadweight Loss Tip:} Imagine an arrow pointing to the optimal output where ``the socials meet'' ($MSB = MSC$). The base of the arrow is at the market equilibrium.
+    \end{itemize}
+
+    \begin{block}{The Government Solution: Subsidies}
+        To correct underproduction, the government provides a \textbf{Per-Unit Subsidy}.
+        \begin{itemize}
+            \item Subsidy amount = Marginal External Benefit (MEB).
+            \item Lump-sum subsidies do \textbf{not} change output efficiently; it must be per-unit.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{Negative Externalities}
+    \begin{alertblock}{The Problem}
+        The market produces at a cost greater to society than the firm pays.
+        \[ \text{MSC} > \text{MSB} \text{ at the market quantity.} \]
+    \end{alertblock}
+
+    \begin{itemize}
+        \item \textbf{Example:} Pollution, secondhand smoke, airplane noise.
+        \item \textbf{Market Failure:} The market \textbf{overproduces} the good ($Q_{mkt} > Q_{social}$).
+        \item \textbf{Analysis:} The firm ignores the external cost, leading to an inefficiently high quantity and low price.
+    \end{itemize}
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{Visualizing Negative Externalities}
+    \textit{(Refer to Figure 11.4 and 11.5 in textbook)}
+    
+    \begin{itemize}
+        \item \textbf{Graphing:} Supply (MPC) represents private costs. MSC is \textbf{higher} than MPC (shifted left/up) because it includes the external cost.
+        \item \textbf{Deadweight Loss:} Points toward the social optimum (leftward).
+    \end{itemize}
+
+    \begin{block}{The Government Solution: Taxes}
+        To correct overproduction, the government imposes a \textbf{Per-Unit Tax}.
+        \begin{itemize}
+            \item Tax amount = Marginal External Cost (MEC).
+            \item This internalizes the externality, shifting the private cost curve to align with the social cost curve.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{Private Solutions: The Coase Theorem}
+    \textbf{Question:} Is government intervention always necessary?
+    
+    \vspace{0.5cm}
+    
+    \textbf{The Coase Theorem (Ronald Coase):}
+    \begin{itemize}
+        \item Private parties can solve externality issues on their own via bargaining.
+        \item \textbf{Condition:} Property rights must be clearly defined and transaction costs must be low.
+        \item \textbf{Examples:}
+        \begin{itemize}
+            \item A polluting firm pays neighbors to compensate for harm.
+            \item An airline buys soundproof windows for homes near an airport.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%---------------------------------------------------------
+\section{Public Goods}
+
+\begin{frame}{Public vs. Private Goods}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Private Goods}
+                \begin{itemize}
+                    \item \textbf{Excludable:} You can be prevented from using it if you don't pay.
+                    \item \textbf{Rival:} One person's consumption reduces availability for others.
+                    \item \textit{Example:} A ticket to a sold-out baseball game.
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Public Goods}
+                \begin{itemize}
+                    \item \textbf{Non-Excludable:} Cannot stop non-payers from benefiting.
+                    \item \textbf{Non-Rival:} One person's use does not diminish another's.
+                    \item \textit{Example:} National defense, clean air, lighthouses.
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{The Free-Rider Problem}
+    \textbf{The Dilemma:}
+    Since public goods are non-excludable, people can benefit without paying.
+    
+    \vspace{0.5cm}
+    \textbf{Consequence:}
+    \begin{itemize}
+        \item If everyone free-rides, the market demand drops to zero.
+        \item Private firms cannot make a profit, so they will \textbf{not supply} the good.
+        \item \textbf{Solution:} The government must provide the good and fund it via taxes (e.g., taxpayer-funded fireworks shows).
+    \end{itemize}
+\end{frame}
+
+%---------------------------------------------------------
+\section{Income Distribution}
+
+\begin{frame}{Measuring Inequality: The Lorenz Curve}
+    Economics uses the Lorenz curve to visualize income distribution.
+    
+    \begin{itemize}
+        \item \textbf{45-Degree Line:} Represents perfect income equality (50\% of families get 50\% of income).
+        \item \textbf{Lorenz Curve:} The actual distribution (shaped like a banana).
+    \end{itemize}
+
+    \vspace{0.5cm}
+    \begin{center}
+        \textit{"The bigger the gap between the Lorenz curve and the perfect equality line (the bigger the banana), the more inequality exists."}
+    \end{center}
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{Measuring Inequality: The Gini Coefficient}
+    \textbf{Gini Coefficient:} A mathematical ratio derived from the Lorenz Curve.
+    
+    \[ \text{Gini} = \frac{\text{Area between Line of Equality \& Lorenz Curve}}{\text{Total Area under Line of Equality}} \]
+
+    \begin{itemize}
+        \item \textbf{Range:} 0 to 1.
+        \item \textbf{0:} Perfect Equality.
+        \item \textbf{1:} Perfect Inequality (one person has all the income).
+        \item \textit{Comparison:} The US has a higher Gini coefficient (more inequality) than France, but lower than Brazil.
+    \end{itemize}
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{Types of Taxes}
+    Governments use taxes to redistribute income.
+    
+    \begin{enumerate}
+        \item \textbf{Progressive Tax:}
+        \begin{itemize}
+            \item Tax rate \textbf{increases} as income increases.
+            \item \textit{Example:} U.S. Federal Income Tax.
+            \item Effect: Reduces income inequality.
+        \end{itemize}
+        
+        \item \textbf{Proportional (Flat) Tax:}
+        \begin{itemize}
+            \item Tax rate stays the \textbf{same} regardless of income.
+            \item Everyone pays the same percentage (e.g., 10\%).
+        \end{itemize}
+        
+        \item \textbf{Regressive Tax:}
+        \begin{itemize}
+            \item Average tax burden \textbf{decreases} as percentage of income as income rises.
+            \item \textit{Example:} Sales tax. (Low-income earners spend a higher \% of their total income on consumption than rich people).
+        \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{Summary Formulas (Unit 8)}
+    \begin{block}{Key Formulas}
+        \begin{itemize}
+            \item \textbf{Allocative Efficiency:} $MSB = MSC$
+            \item \textbf{Social Benefits:} $MSB = MPB + MEB$
+            \item \textbf{Social Costs:} $MSC = MPC + MEC$
+        \end{itemize}
+    \end{block}
+    
+    \vspace{0.5cm}
+    \textbf{Identifying Externalities:}
+    \begin{itemize}
+        \item If $MSB > MSC$: Positive Externality (Underproduction).
+        \item If $MSC > MSB$: Negative Externality (Overproduction).
+    \end{itemize}
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{End of Unit 8}
+    \centering
+    \Large
+    \textbf{Review Questions?}
+    \vspace{1cm}
+    
+    \small
+    \textit{Remember: Positive externalities imply "Too little produced," Negative externalities imply "Too much produced."}
+\end{frame}
+
+\end{document}

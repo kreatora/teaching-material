@@ -1,0 +1,323 @@
+\documentclass{beamer}
+
+% Theme Choice - "Madrid" is clean and professional for lectures
+\usetheme{Madrid}
+\usecolortheme{beaver}
+
+% Packages
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+% Title Information
+\title{Unit 3:National Income, Price Determination}
+\subtitle{Aggregate Demand, Aggregate Supply, and Fiscal Policy}
+\author{Doğukan Günkördü}
+\date{\today}
+
+\begin{document}
+
+% -----------------------------------------------------------------------------
+% Title Slide
+% -----------------------------------------------------------------------------
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% -----------------------------------------------------------------------------
+% Table of Contents
+% -----------------------------------------------------------------------------
+\begin{frame}{Lecture Outline}
+    \tableofcontents
+\end{frame}
+
+% -----------------------------------------------------------------------------
+% Section 1: Aggregate Demand
+% -----------------------------------------------------------------------------
+\section{Aggregate Demand (AD)}
+
+\begin{frame}{Aggregate Demand (AD)}
+    \begin{itemize}
+        \item \textbf{Definition}: The total quantity of output (Real GDP) demanded by all sectors of the economy (Households, Firms, Government, Foreigners) at various price levels.
+        \item \textbf{The Curve}: Downward sloping.
+        \item \textbf{Inverse Relationship}: As Price Level $\uparrow$, Real GDP Demanded $\downarrow$.
+    \end{itemize}
+    \vspace{0.5cm}
+    \begin{block}{Why is AD Downward Sloping?}
+        \begin{enumerate}
+            \item \textbf{The Wealth Effect (Real Balances Effect)}: Higher prices reduce the purchasing power of accumulated assets, reducing consumption.
+            \item \textbf{The Interest Rate Effect}: Higher prices increase the demand for money, driving up interest rates, which reduces Investment ($I$).
+            \item \textbf{The Foreign Trade Effect}: Higher domestic prices make exports more expensive and imports cheaper, reducing Net Exports ($X_n$).
+        \end{enumerate}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Shifters of Aggregate Demand}
+    Any change in the components of GDP (excluding price level changes) shifts the AD curve.
+    \[ AD = C + I + G + X_n \]
+    \begin{itemize}
+        \item \textbf{Consumption ($C$)}: Consumer confidence, taxes, wealth, debt.
+        \item \textbf{Investment ($I$)}: Interest rates, business expectations, technology.
+        \item \textbf{Government Spending ($G$)}: Changes in federal/state spending.
+        \item \textbf{Net Exports ($X_n$)}: Foreign income, exchange rates.
+    \end{itemize}
+    \vspace{0.5cm}
+    \textit{Key: Expansionary policy shifts AD Right ($\rightarrow$); Contractionary shifts Left ($\leftarrow$).}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+% Section 2: Multipliers
+% -----------------------------------------------------------------------------
+\section{Expenditure and Tax Multipliers}
+
+\begin{frame}{Marginal Propensities}
+    How much of an extra dollar do we spend vs. save?
+    \begin{itemize}
+        \item \textbf{Marginal Propensity to Consume (MPC)}: $\frac{\Delta \text{Consumption}}{\Delta \text{Income}}$
+        \item \textbf{Marginal Propensity to Save (MPS)}: $\frac{\Delta \text{Savings}}{\Delta \text{Income}}$
+    \end{itemize}
+    \begin{block}{The Golden Rule}
+        \[ MPC + MPS = 1 \]
+    \end{block}
+\end{frame}
+
+\begin{frame}{The Spending and Tax Multipliers}
+    \begin{block}{Spending Multiplier}
+        Used for changes in Government Spending ($G$) or Investment ($I$).
+        \[ \text{Multiplier} = \frac{1}{MPS} \quad \text{or} \quad \frac{1}{1 - MPC} \]
+        \[ \Delta \text{Total AD} = \text{Multiplier} \times \Delta \text{Initial Spending} \]
+    \end{block}
+
+    \begin{block}{Tax Multiplier}
+        Used for changes in lump-sum taxes.
+        \[ \text{Tax Multiplier} = \frac{-MPC}{MPS} \]
+        \textit{Note: The tax multiplier is always smaller than the spending multiplier because consumers save a portion of the tax cut.}
+    \end{block}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+% Section 3: Short-Run Aggregate Supply
+% -----------------------------------------------------------------------------
+\section{Short-Run Aggregate Supply (SRAS)}
+
+\begin{frame}{Short-Run Aggregate Supply (SRAS)}
+    \begin{itemize}
+        \item \textbf{Definition}: The relationship between the price level and quantity of goods supplied in the short run.
+        \item \textbf{Slope}: Upward sloping.
+    \end{itemize}
+    \begin{block}{Why Upward Sloping? (Sticky Wages)}
+        \begin{itemize}
+            \item In the short run, input prices (wages, raw materials) are \textbf{sticky} (fixed by contracts).
+            \item If Price Level rises, firms sell products for more money, but their costs stay the same.
+            \item \textbf{Result}: Profit margins increase, so firms produce more.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Shifters of SRAS}
+    \textbf{Acronym: RAP} (Resources, Actions of Gov, Productivity)
+    \begin{enumerate}
+        \item \textbf{Resource Prices (Input Costs)}: 
+        \begin{itemize}
+            \item Wages, oil/energy prices, raw materials.
+            \item Supply Shocks (negative or positive).
+            \item Inflationary Expectations (if workers expect inflation, they demand higher wages $\rightarrow$ SRAS shifts left).
+        \end{itemize}
+        \item \textbf{Actions of Government}:
+        \begin{itemize}
+            \item Taxes on producers, subsidies, regulations.
+        \end{itemize}
+        \item \textbf{Productivity}:
+        \begin{itemize}
+            \item Technology, machinery, human capital.
+        \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+% Section 4: Long-Run Aggregate Supply
+% -----------------------------------------------------------------------------
+\section{Long-Run Aggregate Supply (LRAS)}
+
+\begin{frame}{Long-Run Aggregate Supply (LRAS)}
+    \begin{itemize}
+        \item \textbf{Definition}: The level of output the economy can produce when all resources are fully employed (Potential GDP / Full Employment Output $Y_f$).
+        \item \textbf{Slope}: Vertical.
+        \item \textbf{Rationale}: In the long run, all input prices (wages) are \textbf{flexible}. A change in the price level does not change real profit or output.
+        \item \textbf{Shifters}:
+        \begin{itemize}
+            \item The same factors that shift the PPC (Production Possibilities Curve).
+            \item Quantity/Quality of Land, Labor, Capital, and Technology.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+% Section 5: Equilibrium
+% -----------------------------------------------------------------------------
+\section{Equilibrium and Output Gaps}
+
+\begin{frame}{Equilibrium in the AD-AS Model}
+    \begin{itemize}
+        \item \textbf{Short-Run Equilibrium}: Intersection of AD and SRAS. 
+        \item \textbf{Long-Run Equilibrium}: Intersection of AD, SRAS, and LRAS.
+    \end{itemize}
+    \vspace{0.5cm}
+    \textbf{Three States of the Economy:}
+    \begin{enumerate}
+        \item \textbf{Full Employment}: Equilibrium is on the LRAS line.
+        \item \textbf{Recessionary Gap}: Equilibrium is to the \textbf{left} of LRAS. ($Y_e < Y_f$)
+        \begin{itemize}
+            \item High Unemployment.
+        \end{itemize}
+        \item \textbf{Inflationary Gap}: Equilibrium is to the \textbf{right} of LRAS. ($Y_e > Y_f$)
+        \begin{itemize}
+            \item Low Unemployment, High Inflation risk.
+        \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+% Section 6: Self-Adjustment
+% -----------------------------------------------------------------------------
+\section{Long-Run Self Adjustment}
+
+\begin{frame}{Long-Run Self Adjustment}
+    If the government does nothing, how does the economy return to full employment?
+    \vspace{0.3cm}
+    \begin{block}{From a Recessionary Gap}
+        \begin{enumerate}
+            \item High unemployment exists.
+            \item Nominal wages \textbf{fall} eventually (input costs decrease).
+            \item SRAS shifts \textbf{Right}.
+            \item Price Level falls, Output returns to $Y_f$.
+        \end{enumerate}
+    \end{block}
+
+    \begin{block}{From an Inflationary Gap}
+        \begin{enumerate}
+            \item Labor market is tight (unemployment is too low).
+            \item Nominal wages \textbf{rise} (workers demand more pay).
+            \item SRAS shifts \textbf{Left}.
+            \item Price Level rises, Output returns to $Y_f$.
+        \end{enumerate}
+    \end{block}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+% Section 7: Fiscal Policy (Detailed)
+% -----------------------------------------------------------------------------
+\section{Fiscal Policy}
+
+\begin{frame}{Fiscal Policy Overview}
+    \begin{itemize}
+        \item \textbf{Definition}: The use of government spending ($G$) and taxation ($T$) to influence the economy's output, employment, and price level.
+        \item \textbf{Discretionary Fiscal Policy}: Requires new legislation/action (e.g., Congress passing a stimulus bill).
+        \item \textbf{Automatic Stabilizers}: Policies already in law that stabilize the economy without new action.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Expansionary Fiscal Policy}
+    \textbf{Goal}: Combat \textbf{Recession} (Close a recessionary gap).
+    \begin{block}{Tools}
+        \begin{enumerate}
+            \item \textbf{Increase Government Spending ($G \uparrow$)}: Directly increases AD.
+            \item \textbf{Decrease Taxes ($T \downarrow$)}: Increases Disposable Income ($Y_d$), which increases Consumption ($C$).
+        \end{enumerate}
+    \end{block}
+    \begin{itemize}
+        \item \textbf{Mechanism}: $G \uparrow$ or $T \downarrow \Rightarrow AD \text{ shifts Right} \Rightarrow PL \uparrow, \text{Real GDP} \uparrow, \text{Unemployment} \downarrow$.
+        \item \textbf{Side Effect}: Can lead to a budget deficit and higher price levels (inflation).
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Contractionary Fiscal Policy}
+    \textbf{Goal}: Combat \textbf{Inflation} (Close an inflationary gap).
+    \begin{block}{Tools}
+        \begin{enumerate}
+            \item \textbf{Decrease Government Spending ($G \downarrow$)}: Directly decreases AD.
+            \item \textbf{Increase Taxes ($T \uparrow$)}: Decreases Disposable Income ($Y_d$), which decreases Consumption ($C$).
+        \end{enumerate}
+    \end{block}
+    \begin{itemize}
+        \item \textbf{Mechanism}: $G \downarrow$ or $T \uparrow \Rightarrow AD \text{ shifts Left} \Rightarrow PL \downarrow, \text{Real GDP} \downarrow, \text{Unemployment} \uparrow$.
+        \item \textbf{Side Effect}: Can lead to a budget surplus but may increase unemployment.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Spending vs. Tax Multiplier Nuances}
+    Why is the Spending Multiplier effect stronger than the Tax Multiplier?
+    \vspace{0.3cm}
+    \begin{itemize}
+        \item \textbf{Spending ($G$)}: Every dollar of government spending goes directly into the economy.
+        \item \textbf{Taxes ($T$)}: A tax cut increases disposable income, but households \textbf{save} a portion of it (based on the MPS).
+        \begin{itemize}
+            \item Example: If $MPC = 0.8$, a $\$100$ tax cut leads to only $\$80$ in initial new spending ($20\%$ is saved).
+        \end{itemize}
+    \end{itemize}
+    \vspace{0.3cm}
+    \[ |\text{Spending Multiplier}| > |\text{Tax Multiplier}| \]
+    \[ \frac{1}{MPS} > \frac{MPC}{MPS} \]
+\end{frame}
+
+\begin{frame}{Automatic Stabilizers}
+    Mechanisms that dampen business cycle fluctuations \textit{without} new laws.
+    
+    \begin{block}{1. Progressive Income Tax System}
+        \begin{itemize}
+            \item \textbf{In a Recession}: Incomes fall $\rightarrow$ households move into lower tax brackets $\rightarrow$ tax burden falls automatically $\rightarrow$ cushions the drop in disposable income.
+            \item \textbf{In an Expansion}: Incomes rise $\rightarrow$ households move into higher tax brackets $\rightarrow$ tax burden rises $\rightarrow$ slows down excessive consumption.
+        \end{itemize}
+    \end{block}
+
+    \begin{block}{2. Transfer Payments (Unemployment Insurance)}
+        \begin{itemize}
+            \item \textbf{In a Recession}: More people apply for benefits $\rightarrow$ government spending ($G$) effectively increases $\rightarrow$ supports AD.
+            \item \textbf{In an Expansion}: Fewer people qualify $\rightarrow$ spending decreases automatically.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Issues with Fiscal Policy: Lags}
+    Time delays can make fiscal policy less effective.
+    \begin{enumerate}
+        \item \textbf{Recognition Lag}: Time to realize there is a problem (collecting GDP data takes months).
+        \item \textbf{Administrative Lag}: Time for Congress to pass the law.
+        \item \textbf{Operational Lag}: Time for the money to actually be spent.
+    \end{enumerate}
+    \vspace{0.3cm}
+    \textit{Risk: By the time policy hits, the economy may have already self-corrected.}
+\end{frame}
+
+\begin{frame}{Issues with Fiscal Policy: Crowding Out Effect}
+    The negative impact of deficit spending on private investment.
+    
+
+[Image of Crowding Out Diagram]
+
+    \begin{itemize}
+        \item \textbf{Scenario}: Gov increases spending ($G \uparrow$) to fight recession, running a deficit.
+        \item \textbf{The Chain Reaction}:
+        \begin{enumerate}
+            \item Government borrows money (sells bonds).
+            \item Demand for Loanable Funds increases ($\uparrow$).
+            \item Real Interest Rates ($r$) rise ($\uparrow$).
+            \item Private Investment ($I$) decreases ($\downarrow$) because borrowing is expensive.
+        \end{enumerate}
+        \item \textbf{Result}: The AD shift is smaller than intended because $G \uparrow$ is partially offset by $I \downarrow$.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Unit 3 Summary}
+    \begin{enumerate}
+        \item \textbf{AD} is downward sloping (Wealth, Interest Rate, Trade effects).
+        \item \textbf{SRAS} is upward sloping (Sticky Wages). \textbf{LRAS} is vertical (Flexible Wages).
+        \item Equilibrium determines PL and Output.
+        \item \textbf{Fiscal Policy} shifts AD active intervention.
+        \item \textbf{Self-Adjustment} shifts SRAS passive correction.
+        \item Watch out for \textbf{Crowding Out} when the government borrows!
+    \end{enumerate}
+\end{frame}
+
+\end{document}
